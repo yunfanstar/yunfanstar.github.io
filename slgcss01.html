@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* 多类名开发中使用场景
+        * 可以把一些标签元素相同的样式（共同的部分）放到一个类里面
+        * 这些标签都可以调用这个公共的类，然后再调用自己独有的类
+        * 从而节省css代码，统一修改也非常方便
+        *
+         */
+        .box {
+            width: 150px;
+            height: 100px;
+        }
+
+        .red {
+            background-color: #f00;
+        }
+
+        .green {
+
+            background-color: #0f0;
+        }
+        #pink {
+            background-color:pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box red"></div>
+    <div class ="box" id="pink"></div>
+</body>
+
+</html>
